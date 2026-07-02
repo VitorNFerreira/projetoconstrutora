@@ -1,0 +1,24 @@
+# Secrets necessários no GitHub
+
+## Cloudflare
+- `CLOUDFLARE_API_TOKEN`
+- `CLOUDFLARE_ACCOUNT_ID`
+
+## Staging
+- `STAGING_DATABASE_URL`
+- `STAGING_DIRECT_URL`
+- `STAGING_JWT_SECRET`
+- `STAGING_APP_URL`
+- `STAGING_API_URL`
+
+## Produção
+- `PRODUCTION_DATABASE_URL`
+- `PRODUCTION_DIRECT_URL`
+- `PRODUCTION_JWT_SECRET`
+- `PRODUCTION_APP_URL`
+- `PRODUCTION_API_URL`
+
+## Observação
+As URLs do Supabase devem usar:
+- pooled/session URL em `DATABASE_URL`
+- direct URL em `DIRECT_URL`

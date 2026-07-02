@@ -1,0 +1,2 @@
+import { CrudPage } from '../../../components/crud-page';
+export default function Page() { return <CrudPage title="Orçamentos" endpoint="/budgets" fields={[{ name: 'code', label: 'Código', required: true }, { name: 'clientId', label: 'Client ID', required: true }, { name: 'title', label: 'Título', required: true }, { name: 'saleAmount', label: 'Venda', type: 'number', required: true }, { name: 'costAmount', label: 'Custo', type: 'number', required: true }]} />; }

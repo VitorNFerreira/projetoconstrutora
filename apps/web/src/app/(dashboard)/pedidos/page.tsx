@@ -1,0 +1,2 @@
+import { CrudPage } from '../../../components/crud-page';
+export default function Page() { return <CrudPage title="Pedidos de Compra" endpoint="/purchase-orders" fields={[{ name: 'code', label: 'Código', required: true }, { name: 'projectId', label: 'Obra ID', required: true }, { name: 'supplierId', label: 'Fornecedor ID', required: true }, { name: 'purchaseRequestId', label: 'Solicitação ID' }, { name: 'totalAmount', label: 'Valor total', type: 'number', required: true }]} />; }

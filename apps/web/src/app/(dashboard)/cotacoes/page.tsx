@@ -1,0 +1,2 @@
+import { CrudPage } from '../../../components/crud-page';
+export default function Page() { return <CrudPage title="Cotações" endpoint="/supplier-quotes" fields={[{ name: 'code', label: 'Código', required: true }, { name: 'purchaseRequestId', label: 'Solicitação ID', required: true }, { name: 'supplierId', label: 'Fornecedor ID', required: true }, { name: 'totalAmount', label: 'Valor total', type: 'number', required: true }, { name: 'deliveryDays', label: 'Prazo dias', type: 'number' }]} />; }

@@ -1,0 +1,25 @@
+{
+  "name": "gestao-obras",
+  "private": true,
+  "version": "0.1.0",
+  "packageManager": "npm@10.8.2",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "turbo run dev --parallel",
+    "build": "turbo run build",
+    "lint": "turbo run lint",
+    "db:generate": "npm run prisma:generate -w @gestao-obras/api",
+    "db:migrate": "npm run prisma:migrate -w @gestao-obras/api",
+    "db:migrate:deploy": "npm run prisma:migrate:deploy -w @gestao-obras/api",
+    "db:seed": "npm run prisma:seed -w @gestao-obras/api",
+    "deploy:web": "npm run deploy -w @gestao-obras/web",
+    "deploy:api": "npm run cf:deploy -w @gestao-obras/api"
+  },
+  "devDependencies": {
+    "turbo": "^2.0.14",
+    "typescript": "^5.5.4"
+  }
+}

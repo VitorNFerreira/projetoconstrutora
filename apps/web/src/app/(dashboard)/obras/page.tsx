@@ -1,0 +1,2 @@
+import { CrudPage } from '../../../components/crud-page';
+export default function Page() { return <CrudPage title="Obras" endpoint="/projects" fields={[{ name: 'code', label: 'Código', required: true }, { name: 'clientId', label: 'Client ID', required: true }, { name: 'name', label: 'Nome', required: true }, { name: 'location', label: 'Local' }, { name: 'contractValue', label: 'Valor contrato', type: 'number', required: true }]} />; }
