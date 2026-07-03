@@ -52,9 +52,9 @@ jobs:
           printf '%s' "$PRODUCTION_JWT_SECRET" | npx wrangler secret put JWT_SECRET --config apps/api/wrangler.jsonc
           printf '%s' "$PRODUCTION_APP_URL" | npx wrangler secret put CORS_ORIGIN --config apps/api/wrangler.jsonc
 
-      - name: Deploy API to Cloudflare Containers
-        run: npm run deploy:api
-        env:
+      -  name: Deploy API to Cloudflare Containers
+          run: npx wrangler deploy --config apps/api/wrangler.jsonc
+          env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
 
