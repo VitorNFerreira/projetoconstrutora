@@ -10,7 +10,7 @@
   "containers": [
     {
       "class_name": "ApiContainer",
-      "image": "./Dockerfile",
+      "image": "../../Dockerfile",
       "max_instances": 3
     }
   ],
